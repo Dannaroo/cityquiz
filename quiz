@@ -1,0 +1,20 @@
+// Capital City Quiz
+
+//Assume the player got the answer wrong
+var correctCount = 0;
+
+//Function to ask the questions
+function question ( questionNumber, country, city ) {
+  var answer = prompt( "Question " + questionNumber + ": What is the capital city of " + country);
+  if (answer.toUpperCase() === city) {
+    alert("You are correct!");
+    return 1;
+  } else {
+      alert("Sorry, the capital of " + country + " is " + city);
+  }
+}
+
+//Call function with questions and answers
+correctCount = question();
+
+console.log(correctCount);
